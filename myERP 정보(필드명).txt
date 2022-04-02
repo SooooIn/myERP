@@ -1,0 +1,105 @@
+(t_login table) : 로그인
+- id / varchar(30) : 사번 *
+- pass / varchar(30) : 비밀번호
+
+(position table) : 직책
+- val / varchar(15) : 직책명
+- code / varchar(10) : 코드 *
+
+(department table) : 부서
+- val / varchar(15) : 부서명
+- code / varchar(10) : 코드 *
+
+(religion table) : 종교
+- val / varchar(15) : 종교명
+- code / varchar(10) : 코드 *
+
+(retirement_reason table) : 퇴직사유
+- val / varchar(15) : 퇴직사유
+
+(member table) : 사원
+- name_k / varchar(10) : 성명(한)
+- name_e / varchar(20) : 성명(영)
+- name_c / varchar(10) : 성명(한자)
+- m_address / varchar(50) : 주소
+- marriage / int : 결혼여부(0:미혼, 1:기혼)
+- e_mail / varchar(30) : 이메일
+- c_number / varchar(30) : 연락처
+- sex / int : 성별(0:남, 1:여)
+- height / int : 키
+- weight_ / int : 체중
+- blood / varchar(10) : 혈액형
+- sight_l / varchar(10) : 시력(좌)
+- sight_r / varchar(10) : 시력(우)
+- religion / varchar(15) : 종교
+- depart / varchar(10) : 부서
+- position / varchar(10) : 직책
+- birth_date / varchar(30) : 생년월일
+- join_date / varchar(30) : 입사일
+- id / varchar(30) : 사원번호 *
+- work / int : 재직여부(0:퇴사, 1:재직중)
+
+(family table) : 가족
+- f_id / varchar(30) : 사원번호
+- relation / varchar(10) : 가족관계
+- place / varchar(15) : 근무처
+- f_name / varchar(10) : 성명
+- job / varchar(10) : 직업
+- birth_date / varchar(30) : 생년월일
+- c_number / varchar(30) : 전화번호 
+
+(retired table) : 퇴직자
+- id / varchar(30) : 사원번호 *
+- r_name / varchar(10) : 성명
+- c_number / varchar(30) : 연락처
+- depart / varchar(10) : 부서
+- position / varchar(10) : 직책
+- retire_date / varchar(30) : 퇴직년월일
+- r_reason / varchar(15) : 퇴직사유
+
+
+
+
+[Query]
+create table t_login(id varchar(30), pass varchar(30), primary key(id));
+
+create table position(val varchar(15), code varchar(10), primary key(code));
+
+create table department(val varchar(15), code varchar(10), primary key(code));
+
+create table religion(val varchar(15), code varchar(10), primary key(code));
+
+create table retirement_reason(val varchar(15));
+
+create table member(name_k varchar(10), name_e varchar(20), name_c varchar(10),
+					m_address varchar(50), marriage int, e_mail varchar(30),
+					c_number varchar(30), sex int, height int, weight_ int,
+					blood varchar(10), sight_l varchar(10), sight_r varchar(10),
+					religioin varchar(15), depart varchar(10), position varchar(10),
+					birth_date varchar(30), join_date varchar(30), id varchar(30), work int
+					primary key(id));
+
+create table family(f_id varchar(30), relation varchar(10), place varchar(15),
+					f_name varchar(10), job varchar(10), birth_date varchar(30), c_number varchar(30));
+
+create table retired(id varchar(30), r_name varchar(10), c_number varchar(30),
+					depart varchar(10), position varchar(10), retire_date varchar(30), r_reason varchar(15)
+					primary key(id));
+
+insert into t_login values('mgr', '1234');
+
+insert into department values('경리부', 'GR');
+
+insert into position values('사장', 'SJ');
+
+insert into religion values('무신앙', '1');
+
+insert into retired values('20220328GR','김철수','010-1111-2222','경리부','사원','2022.03.28','희망');
+
+insert into member values('이영희','LYH','李榮喜','광주 광산구 신창로 127 2층',0,
+							'yh123@naver.com','010-1234-1234',1,160,48,'A','1.0','1.2',
+							'무신앙','경리부','사원','1999년 4월 30일','2022년 3월 29일','20220329GR',1);
+
+
+insert into family values('20220329GR','부','광주','이동희','회사원','1973년 5월 10일','대졸');
+insert into family values('20220329GR','모','광주','최하나','회사원','1975년 1월 28일','대졸');

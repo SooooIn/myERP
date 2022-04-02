@@ -1,0 +1,280 @@
+(login 폼)
+- m_id : 사원번호(기본키)
+- lbl_m_id : 사원번호 label
+- m_pass : 사원 비밀번호
+- lbl_m_pass : 비밀번호 label
+- btn_Login : 로그인 버튼
+- login_state : 로그인 상태 표시 label
+
+(ERP_main 폼)
+- menuStrip1 : myERP menuStrip
+
+(Position 폼) : 기초정보관리->직책
+- p_TabMenu : 등록, 수정, 삭제, 조회 tabControl
+- p_Search : 조회 탭
+	- lbl_s_position : 대상 label
+	- s_position : 조회할 대상 textBox
+	- btn_p_search : 찾기 button
+	- lvPosition_s : 조회 탭의 listView
+		- lvPosition_s_k : 직책(한글)
+		- lvPosition_s_c : 직책(코드)
+- p_Add : 등록 탭
+	- lbl_a_position : 직책 label
+	- lbl_a_p_code : 코드 label
+	- a_position : 직책 textbox
+	- a_p_code : 코드 textbox
+	- btn_p_add : 추가하기 button
+	- lvPosition_a : 등록 탭의 listView
+		- lvPosition_a_k : 직책(한글)
+		- lvPosition_a_c : 직책(코드)
+- p_Update : 수정 탭
+	- lbl_u_positioin : 직책 label
+	- u_position : 직책 textbox
+	- lbl_u_p_code : 코드 label
+	- u_p_code : 코드 textbox
+	- btn_p_update : 수정하기 button
+	- lvPosition_u : 수정 탭의 listView
+		- lvPosition_u_k : 직책(한글)
+		- lvPosition_u_c : 직책(코드)
+	- up_hidden : 숨겨진 textbox
+	- up_hidden2 : 숨겨진 textbox 
+- p_Delete : 삭제 탭
+	- btn_p_delete : 삭제 button
+	- lvPosition_d : 삭제 탭의 listView
+		- lvPosition_d_k : 직책(한글)
+		- lvPosition_d_c : 직책(코드)
+	- dp_hidden : 숨겨진 textbox
+	- dp_hidden2 : 숨겨진 textbox
+
+(Department 폼) : 기초정보관리->부서
+- d_tabMenu : 등록, 수정, 삭제, 조회 tabControl
+- d_Search : 조회 탭
+	- lbl_s_depart : 대상 label
+	- s_depart : 부서 입력 textbox
+	- btn_d_search : 찾기 button
+	- lvDepart_s : 조회 탭의 listView
+		- lvDepart_s_k : 부서(한글)
+		- lvDepart_s_c : 부서(코드)
+- d_Add : 등록 탭
+	- lbl_a_depart : 부서 label
+	- lbl_a_d_code : 코드 label
+	- a_depart : 부서 textbox
+	- a_d_code : 코드 textbox
+	- btn_d_add : 추가하기 button
+	- lvDepart_a : 등록 탭의 listView
+		- lvDepart_a_k : 부서(한글)
+		- lvDepart_a_c : 부서(코드)
+- d_Update : 수정 탭
+	- lbl_u_depart : 부서 label
+	- u_depart : 부서 textbox
+	- lbl_u_d_code : 코드 label
+	- u_d_code : 코드 textbox
+	- btn_d_update : 수정하기 button
+	- lvDepart_u : 수정 탭의 listView
+		- lvDepart_u_k : 부서(한글)
+		- lvDepart_u_c : 부서(코드)
+	- ud_hidden : 숨겨진 textbox
+	- ud_hidden2 : 숨겨진 textbox
+- d_Delete : 삭제 탭
+	- btn_d_delete : 삭제 button
+	- lvDepart_d : 삭제 탭의 listView
+		- lvDepart_d_k : 부서(한글)
+		- lvDepart_d_c : 부서(코드)
+	- dd_hidden : 숨겨진 textbox
+	- dd_hidden2 : 숨겨진 textbox
+
+(Religion 폼) : 기초정보관리->종교
+- r_tabMenu : 등록, 수정, 삭제, 조회 tabControl
+- r_Search : 조회 탭
+	- lbl_s_religion : 대상 label
+	- s_religion : 종교 입력 textbox
+	- btn_r_search : 찾기 button
+	- lvReligion_s : 조회 탭의 listView
+		- lvReligion_s_k : 종교(한글)
+		- lvReligion_s_c : 종교(코드)
+- r_Add : 등록 탭
+	- lbl_a_religion : 종교 label
+	- lbl_a_r_code : 코드 label
+	- a_religion : 종교 textbox
+	- a_r_code : 코드 textbox
+	- btn_r_add : 추가하기 button
+	- lvReligion_a : 등록 탭의 listView
+		- lvReligion_a_k : 종교(한글)
+		- lvReligion_a_c : 종교(코드)
+- r_Update : 수정 탭
+	- lbl_u_religion : 종교 label
+	- u_religion : 종교 textbox
+	- lbl_u_r_code : 코드 label
+	- u_r_code : 코드 textbox
+	- btn_r_update : 수정하기 button
+	- lvReligion_u : 수정 탭의 listView
+		- lvReligion_u_k : 종교(한글)
+		- lvReligion_u_c : 종교(코드)
+	- ur_hidden : 숨겨진 textbox
+	- ur_hidden2 : 숨겨진 textbox
+
+- r_Delete : 삭제 탭
+	- btn_r_delete : 삭제 button
+	- lvReligion_d : 삭제 탭의 listView
+		- lvReligion_d_k : 종교(한글)
+		- lvReligion_d_c : 종교(코드)
+	- dr_hidden : 숨겨진 textbox
+	- dr_hidden2 : 숨겨진 textbox
+
+(Member 폼) : 사원관리
+- lbl_section : 구분 label
+- cb_section : 구분 combobox
+- tb_search : 사원 검색 textbox
+- btn_m_search : 사원 검색 button
+- btn_m_insert : 입력 button
+- btn_m_update : 수정 button
+- btn_m_delete : 삭제 button
+- tableLayoutPanel : 사원정보 레이아웃
+	- lbl_address : 주소 label
+	- lbl_body : 신체사항 label
+	- lbl_id : 사원번호 label
+	- lbl_name : 이름 label
+	- lbl_height : 키 label
+	- lbl_weight : 몸무게 label
+	- lbl_position : 직책 label
+	- lbl_join_date : 입사일 label
+	- lbl_birth_date : 생년월일 label
+	- lbl_email : 이메일 label
+	- lbl_sight : 시력 label
+	- lbl_blood : 혈액형 label
+	- lbl_depart : 근무부서 label
+	- lbl_call : 연락처 label
+	- lbl_sex : 성별 label
+	- lbl_marriage : 결혼관계 label
+	- lbl_religion : 종교 label
+	- tb_id : 사원번호 textbox
+	- tb_name_k : 이름 한국어 textbox
+	- tb_name_e : 이름 영어 textbox
+	- tb_name_c : 이름 한자 textbox
+	- tb_address : 주소 textbox
+	- tb_height : 키 textbox
+	- tb_weight : 몸무게 textbox
+	- cb_position : 직책 combobox
+	- tb_email : 이메일 textbox
+	- tb_sight_l : 시력(왼) textbox
+	- tb_sight_r : 시력(오) textbox
+	- cb_blood : 혈액형 combobox
+	- cb_depart : 근무부서 combobox
+	- tb_call : 연락처 textbox
+	- rb_male : 남 radiobutton
+	- rb_female : 여 radiobutton
+	- rb_married : 기혼 radiobutton
+	- rb_unmarried : 미혼 radiobutton
+	- cb_religion : 종교 combobox
+	- dtp_join_date : 입사일 dateTimePicker
+	- dtp_birth_date : 생년월일 dateTimePicker
+	- s_id : 수정, 삭제를 위한 숨겨진 textbox
+	- hidden_s : 구분에 따른 조회를 위해 숨겨진 textbox
+- lvMember : 사원 목록 listView
+	- col_id : 사원번호 column
+	- col_name : 이름 column
+	- col_sex : 성별 column
+	- col_position : 직책 column
+	- col_depart : 부서 column
+	- col_email : 이메일 column
+
+(Family 폼) : 가족 사항 관리
+- lbl_f_id : 사원번호 label
+- cb_f_id : 사원번호combobox
+- btn_f_search : 사원 조회 button
+- lbl_f_id2 : 사원번호 label
+- tb_f_id2 : 사원번호 textbox
+- lbl_f_name : 성명 label
+- tb_f_name : 성명 textbox
+- lbl_f_depart : 부서 label
+- tb_f_depart : 부서 textbox
+- lbl_f_position : 직책 label
+- tb_f_position : 직책 textbox
+- lbl_f_relation : 관계 label
+- tb_f_relation : 관계 textbox
+- lbl_f_name2 : 성명 label
+- tb_f_name2 : 성명 textbox
+- lbl_f_birth : 생년월일 label
+- dtp_f_birth : 생년월일 textbox
+- lbl_f_place : 근무처 label
+- tb_f_place : 근무처 textbox
+- lbl_f_job : 직업 label
+- tb_f_job : 직업 textbox
+- lbl_f_number : 연락처 label
+- tb_f_number : 연락처 textbox
+- call_hidden : 숨겨진 textbox
+- btn_f_insert : 입력 button
+- btn_f_update : 수정 button
+- btn_f_delete : 삭제 button
+- lvFamily : 가족 listView
+	- lvFamily_r : 관계
+	- lvFamily_n : 성명
+	- lvFamily_b : 생년월일
+	- lvFamily_p : 근무처
+	- lvFamily_j : 직업
+	- lvFamily_c : 연락처
+
+(Retired 폼) : 퇴직자 관리
+- tab_AUS : 추가/수정, 조회 tabcontrol
+	- tab_R : 퇴직처리 tab
+		- lbl_served : 재직 label
+		- lbl_retired : 퇴직 label
+		- lv_served : 재직 listview
+			- lv_served_id : 사번
+			- lv_served_name : 성명
+		- lv_retired : 퇴직 listview
+			- lv_retired_id : 사번
+			- lv_retired_name : 성명
+		- btn_add : >(퇴직자 추가) button
+		- btn_del : <(퇴직자 취소) button
+		- retire_hidden : 숨겨진 textbox
+	- tab_AU : 추가/수정 tab
+		- lbl_r_id : 사원번호 label
+		- cb_r_id : 사원번호 textbox
+		- btn_r_search : 조회 button
+		- r_layout : tablelayoutPanel
+		- lbl_AU_name : 이름 label
+		- tb_AU_name : 이름 textbox
+		- lbl_AU_reason : 퇴직사유 label
+		- cb_AU_reason : 퇴직사유 combobox
+		- lbl_AU_call : 연락처 label
+		- tb_AU_call : 연락처 textbox
+		- lbl_AU_depart : 부서 label
+		- cb_AU_depart : 부서 combobox
+		- lbl_AU_position : 직책 label
+		- cb_AU_position : 직책 combobox
+		- lbl_AU_date : 퇴직년월일 label
+		- dtp_AU_date : 퇴직년월일 datetimepicker
+		- btn_AU_add : 추가 button
+		- btn_AU_update : 수정 button
+	- tab_S : 전체조회 tab	
+		- rb_S_reason : 퇴직사유 checkbox
+		- rb_S_depart : 근무부서 checkbox
+		- rb_S_date : 퇴직날짜 checkbox
+		- rb_S_position : 직책 checkbox
+		- groupBox1 : 퇴직사유, 근무부서, 성별, 직책 groupbox
+		- lvRetired : 퇴직자 listView
+			- lvRetired_i : 사번
+			- lvRetired_n : 이름
+			- lvRetired_c : 연락처
+			- lvRetired_d : 부서
+			- lvRetired_p : 직책
+			- lvRetired_date : 퇴직년월일
+			- lvRetired_re : 퇴직사유
+
+(Report 폼) : 보고서 조회
+- r_group : radiobutton 4개 groupbox
+- rb_total : 전체 radiobutton
+- rb_reason : 퇴직자(사유별) radiobutton
+- rb_depart : 부서 radiobutton
+- rb_position : 직책 radiobutton
+- cb_report : 조회를 위한 combobox
+- btn_report : 조회 button
+- lv_Report : listview
+
+
+
+
+
+
+
